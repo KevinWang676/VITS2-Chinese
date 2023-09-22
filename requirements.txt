@@ -2,12 +2,12 @@ cmake==3.26.1
 Cython==0.29.21
 librosa==0.8.0
 matplotlib==3.3.1
-numpy==1.19.5
+numpy
 numba==0.56.4
 phonemizer==3.2.1
 scipy==1.10.1
-#torch~=1.13.0+cu117
-#torchvision==0.7.0
+#torch==1.13.0
+#torchvision==0.14.0
 Unidecode==1.1.1
 tensorboardX
 tqdm~=4.66.1
@@ -27,3 +27,6 @@ jieba==0.42.1
 tensorboard
 # ipython for notebook inference
 ipython
+openai-whisper
+protobuf==3.20.*
+gradio
