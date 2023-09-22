@@ -48,4 +48,4 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--filename", default="linghua.wav")
     args = parser.parse_args()
-    split_long_audio(whisper_model, f"{args.filename}", "./custom_character_voice/character/")
+    split_long_audio(whisper_model, "./" + args.filename, "./custom_character_voice/character/")
