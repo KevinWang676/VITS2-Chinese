@@ -96,7 +96,7 @@ def vcms(inputstr, sid):
 
 
 
-hps = utils.get_hparams_from_file("./configs/mini_mb_istft_vits2_base.json")
+hps = utils.get_hparams_from_file("./configs/config.json")
 
 if "use_mel_posterior_encoder" in hps.model.keys() and hps.model.use_mel_posterior_encoder == True:
     print("Using mel posterior encoder for VITS2")
