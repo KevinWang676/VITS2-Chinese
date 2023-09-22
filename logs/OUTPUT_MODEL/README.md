@@ -1,1 +1,1 @@
-Please put the pretrained models under this folder | 请将预训练模型放在此文件夹下
+If there are pretrained models, please put them under this folder | 如果有预训练模型，请将它们放在此文件夹下
