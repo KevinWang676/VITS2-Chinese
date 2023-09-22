@@ -29,5 +29,5 @@ python preprocess.py
 ```
 7. 开始训练
 ```
-python train.py -c ./configs/config.json -m OUTPUT_MODELS
+python train.py -c ./configs/config.json -m OUTPUT_MODEL
 ```
