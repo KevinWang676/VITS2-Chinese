@@ -27,3 +27,7 @@ python short_audio_transcribe.py --languages "C" --whisper_size large
 ```
 python preprocess.py
 ```
+7. 开始训练
+```
+python train.py -c ./configs/config.json -m OUTPUT_MODELS
+```
