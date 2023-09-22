@@ -18,7 +18,7 @@ inflect==6.0.2
 pydantic==1.10.12
 eng-to-ipa==0.0.2
 cn2an==0.5.17
-pyopenjtalk==0.2.0
+pyopenjtalk==0.3.2
 jamo==0.4.1
 ko-pron==1.3
 g2pk2==0.0.1
