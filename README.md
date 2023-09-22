@@ -19,7 +19,7 @@ python setup.py build_ext --inplace
 ```
 python split.py --filename {filename}.wav
 ```
-5. 语音标注：标注完成后，可以在
+5. 语音标注：标注完成后，可以在`filelists/short_character_anno.list`文件中对标注内容微调
 ```
 python short_audio_transcribe.py --languages "C" --whisper_size large
 ```
