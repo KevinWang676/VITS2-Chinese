@@ -6,7 +6,7 @@ if __name__ == '__main__':
   parser = argparse.ArgumentParser()
   parser.add_argument("--out_extension", default="cleaned")
   parser.add_argument("--text_index", default=1, type=int)
-  parser.add_argument("--filelists", nargs="+", default=["filelists/short_character_anno_val.list", "filelists/short_character_anno_train.list"])
+  parser.add_argument("--filelists", nargs="+", default=["filelists/short_character_anno.list"])
   parser.add_argument("--text_cleaners", nargs="+", default=["chinese_cleaners"])
 
   args = parser.parse_args()
@@ -20,6 +20,10 @@ if __name__ == '__main__':
       cleaned_text = text._clean_text(original_text, args.text_cleaners)
       filepaths_and_text[i][args.text_index] = cleaned_text
 
-    new_filelist = filelist + "." + args.out_extension
-    with open(new_filelist, "w", encoding="utf-8") as f:
+    new_filelist1 = "short_character_anno_train.list" + "." + args.out_extension
+    new_filelist2 = "short_character_anno_val.list" + "." + args.out_extension
+    
+    with open(new_filelist1, "w", encoding="utf-8") as f:
+      f.writelines(["|".join(x) + "\n" for x in filepaths_and_text])
+    with open(new_filelist2, "w", encoding="utf-8") as f:
       f.writelines(["|".join(x) + "\n" for x in filepaths_and_text])
