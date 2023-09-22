@@ -27,7 +27,9 @@ python short_audio_transcribe.py --languages "C" --whisper_size large
 ```
 python preprocess.py
 ```
+## 训练及推理
 7. 开始训练
 ```
 python train.py -c ./configs/config.json -m OUTPUT_MODEL
 ```
+8. 推理
