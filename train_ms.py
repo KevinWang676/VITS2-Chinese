@@ -381,10 +381,13 @@ def train_and_evaluate(rank, epoch, hps, nets, optims, schedulers, scaler, loade
 
                 prev_g = os.path.join(hps.model_dir, "G_{}.pth".format(global_step - 2 * hps.train.eval_interval))
                 prev_d = os.path.join(hps.model_dir, "D_{}.pth".format(global_step - 2 * hps.train.eval_interval))
+                prev_dur = os.path.join(hps.model_dir, "DUR_{}.pth".format(global_step - 2 * hps.train.eval_interval))
                 if os.path.exists(prev_g):
                     os.remove(prev_g)
                 if os.path.exists(prev_d):
                     os.remove(prev_d)
+                if os.path.exists(prev_dur):
+                    os.remove(prev_dur)               
 
         global_step += 1
 
