@@ -103,10 +103,7 @@ if __name__ == "__main__":
     if len(speaker_annos) == 0:
         print("Warning: no short audios found, this IS expected if you have only uploaded long audios, videos or video links.")
         print("this IS NOT expected if you have uploaded a zip file of short audios. Please check your file structure or make sure your audio language is supported.")
-    with open("./filelists/short_character_anno_train.list", 'w', encoding='utf-8') as f:
-        for line in speaker_annos:
-            f.write(line)
-    with open("./filelists/short_character_anno_val.list", 'w', encoding='utf-8') as f:
+    with open("./filelists/short_character_anno.list", 'w', encoding='utf-8') as f:
         for line in speaker_annos:
             f.write(line)
 
