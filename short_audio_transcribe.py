@@ -83,7 +83,7 @@ if __name__ == "__main__":
                     continue
                 text = text + "\n"#
                 #text = lang2token[lang] + text + lang2token[lang] + "\n"
-                speaker_annos.append(save_path + "|" + text)
+                speaker_annos.append(save_path + "|" + "[ZH]" + text + "[ZH]")
                 
                 processed_files += 1
                 print(f"Processed: {processed_files}/{total_files}")
