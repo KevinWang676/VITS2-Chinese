@@ -31,6 +31,5 @@ python preprocess.py
 ```
 python train.py -c ./configs/config.json -m OUTPUT_MODEL
 ```
-8. 推理
-
+8. 推理 \
 参考[inference.ipynb](https://github.com/KevinWang676/VITS2-Chinese/blob/main/inference.ipynb)
