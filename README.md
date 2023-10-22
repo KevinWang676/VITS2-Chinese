@@ -1,6 +1,6 @@
 # VITS2 Chinese 🎶🌟💕
 ## 只需上传一段语音素材，程序自动将语音切片、标注、预处理，一键训练
-## 环境配置
+## 环境配置 (Work in progress)
 1. 运行
 ```
 git clone https://github.com/KevinWang676/VITS2-Chinese.git
