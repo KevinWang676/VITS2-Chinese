@@ -12,7 +12,7 @@ pip install -r requirements.txt
 cd monotonic_align
 python setup.py build_ext --inplace
 ```
-3. 上传语音文件：请上传一段**中文**、**单说话人**的语音文件，建议为长度大于10分钟的`.wav`文件
+3. 上传语音文件：请上传一段**中文**、**单说话人**的语音文件，建议为较大数据集对应的`.wav`文件
 ## 语音处理
 4. 语音切片：在filename处填写上传的语音文件名
 ```
