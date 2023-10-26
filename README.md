@@ -35,5 +35,5 @@ python train.py -c ./configs/config.json -m OUTPUT_MODEL
 
 参考[inference.ipynb](https://github.com/KevinWang676/VITS2-Chinese/blob/main/inference.ipynb)
 
-## Acknowledgment
+## Acknowledgement
 Based on [MB-iSTFT-VITS2](https://github.com/FENRlR/MB-iSTFT-VITS2)
